@@ -8,3 +8,5 @@ Each grade-specific data file contains a list of vocab words, a set of grammar r
 
 The demos folder contains demos for all the major pages and functions of the Read with Emora website.
 For more information or to try out Read with Emora, visit our website at https://read-with-emora-dev-frontend.vercel.app
+
+To read my thesis on this project entitled "Read with Emora: Revolutionizing Children’s Reading Comprehension Through An LLM-Powered Personalized Intelligent Tutoring System for Vocabulary, Grammar, and Context-Based Learning" please see Catherine_Baker_Thesis.pdf
