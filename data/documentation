@@ -1,0 +1,58 @@
+This document provides detailed information about the sources and methods used to compile the data for our GPT-based reading comprehension tool for children. The data is organized into five JSON files, each corresponding to a specific grade level (first through fifth). Each file contains recommended passage lengths, vocabulary words, grammar rules, learning objectives, and prompts.
+
+The data is divided into the following JSON files: 
+	•	first.json
+	•	second.json
+	•	third.json
+	•	fourth.json
+	•	fifth.json
+
+Each JSON file includes:
+	•	length: (int) recommended length of passage
+	•	vocab: (list of strings) list of vocabulary words
+	•	grammar: (list of strings) set of grammar rules
+	•	objectives: list of learning objectives and prompts
+
+Vocabulary Data
+The vocabulary words were sourced from multiple platforms to ensure a comprehensive list suitable for each grade level. We also considered academic insights on vocabulary acquisition in children, but could not find sufficient and easily available or accessible literature defining vocabulary lists and words for children.
+
+Sources
+	•	Flocabulary: Flocabulary Wordlists (140 words)
+	•	K12Reader: K12Reader Fifth Grade Spelling Words (576 words)
+	•	Vocabulary.com: Vocabulary Lists (140 words, sourced from Flocabulary leading to almost all duplicates)
+
+Pre-Processing
+A script (sortVocab.py) was used for the following pre-processing steps:
+	•	Converted all words to lowercase
+	•	Sorted words alphabetically
+	•	Removed duplicate words
+
+Grade-Specific Vocabulary Counts
+	•	First Grade: 437 words
+	•	Second Grade: 676 words
+	•	Third Grade: 701 words
+	•	Fourth Grade: 847 words
+	•	Fifth Grade: 847 words
+
+Grammar Data
+The grammar rules were collated from two primary sources to ensure consistency. Like with vocabulary, more academic sources containing lists of recommended grammar rules per grade were unable to be found by the authors.
+
+Sources
+	•	BigLearners.com
+	•	NightZookeeper.com
+
+Pre-Processing
+A script (sortGrammar.py) was used for the following pre-processing steps:
+	•	removing duplicates
+	•	correcting phrase capitalization
+
+Past this, rule relevance was verified manually by the authors and unrelated or untestable topics were removed such as ‘vocabulary’ or ‘research and presentation’).
+
+Prompts and Learning Objectives
+All prompts and learning objectives were derived from the English Language Arts and Literacy of the Massachusetts Curriculum Framework of 2017 for Grades Pre-Kindergarten to 12. Massachusetts is known for its high standards in elementary and middle school education, making this framework a robust and reliable source for our educational tool.
+Source
+	•	Massachusetts Curriculum Framework 2017
+
+
+
+By using a combination of reputable educational websites, academic research, and state curriculum standards, we have ensured that our data is comprehensive, accurate, and appropriate for each grade level. This document will be included in the data folder of our GitHub repository for transparency and reference.
